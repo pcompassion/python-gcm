@@ -158,7 +158,7 @@ class GCM(object):
             payload['dry_run'] = True
 
         if is_json:
-            payload = json.dumps(payload)
+            payload = json.dumps(payload).encode('utf-8')
 
         return payload
 
